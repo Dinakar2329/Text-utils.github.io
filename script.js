@@ -9,9 +9,7 @@ const chars = document.getElementById("chars");
 const read = document.getElementById("read");
 const summary = document.getElementById("summary");
 
-count.innerHTML = "0";
-chars.innerHTML = "0";
-read.innerHTML = "0";
+
 text.addEventListener("input", () => {
   count.innerHTML = text.value.split(" ").length;
   chars.innerHTML = text.value.length;
