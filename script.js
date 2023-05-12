@@ -31,8 +31,8 @@ function handleClear() {
   if (!text.value == "") {
     text.value = preview.innerHTML = "";
     banner.innerHTML = "Your Text Has Been Cleared";
-    count = 0;
-    chars = 0;
+    count.innerHTML = 0;
+    chars.innerHTML = 0;
   } else {
     banner.innerHTML = "Enter Text To Clear";
   }
