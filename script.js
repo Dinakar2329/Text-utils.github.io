@@ -29,7 +29,9 @@ function handleClear() {
   if (!text.value == "") {
     text.value = preview.innerHTML = "";
     banner.innerHTML = "Your Text Has Been Cleared";
-    count.innerHTML = chars.innerHTML = read.innerHTML = "0";
+    count.innerHTML ="0";
+chars.innerHTML = "0";
+    read.innerHTML = "0";
 
 
   } else {
