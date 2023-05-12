@@ -9,9 +9,9 @@ const chars = document.getElementById("chars");
 const read = document.getElementById("read");
 const summary = document.getElementById("summary");
 
-count = 0;
-chars = 0;
-read = 0;
+count.innerHTML = "0";
+chars.innerHTML = "0";
+read.innerHTML = "0";
 text.addEventListener("input", () => {
   count.innerHTML = text.value.split(" ").length;
   chars.innerHTML = text.value.length;
@@ -31,8 +31,9 @@ function handleClear() {
   if (!text.value == "") {
     text.value = preview.innerHTML = "";
     banner.innerHTML = "Your Text Has Been Cleared";
-    count.innerHTML = 0;
-    chars.innerHTML = 0;
+    count.innerHTML = chars.innerHTML = read.innerHTML = "0";
+
+
   } else {
     banner.innerHTML = "Enter Text To Clear";
   }
