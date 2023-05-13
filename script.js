@@ -116,3 +116,18 @@ function changeWhite() {
     elements[i].style.color = "black";
   }
 }
+
+function capitalizeAfterPeriod(text) {
+  let sentences = text.split(". ");
+  for (let i = 0; i < sentences.length; i++) {
+    sentences[i] = sentences[i].charAt(0).toUpperCase() + sentences[i].slice(1);
+  }
+  return sentences.join(". ");
+}
+
+function handlecapitalize() {
+  let originalText = text.value;
+  let capitalizedText = capitalizeAfterPeriod(originalText);
+  text.value = preview.innerHTML = capitalizedText;
+  banner.innerHTML = "Your Text Has Been Capitalized";
+}
